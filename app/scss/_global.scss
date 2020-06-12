@@ -1,0 +1,196 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+body {
+    font-family: 'Play', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #E1e4ed;
+    background-color: #020A1E;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+
+
+}
+
+.background-main {
+    height: 100vh;
+    background-image: url('../img/planet-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.background {
+    background-color: #020A1E;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #E1e4ed;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #E1e4ed;
+}
+
+
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.nav__items-link:nth-child(3) {
+    padding: 0;
+}
+
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background: url('../img/planet-bg.png') no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+}
+
+.stopfade {
+    opacity: .5;
+}
+
+// SCROLL
+
+:root {
+    --shadow: #36185e;
+    --scrollbarBG: #eee;
+    --thumbBG: #6692bb;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+
+}
+
+::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG);
+    box-shadow: 0 -100vh 0 100vh var(--shadow), 0 0 10px 5px black;
+}
+
+
+
+.header-fixed .header-limiter {
+    max-width: 1200px;
+    text-align: start;
+    margin: 0 auto;
+}
+
+
+
+.header-fixed-placeholder {
+    height: 80px;
+    display: none;
+}
+
+
+.header-limiter nav > a:hover{
+    border-bottom: 1px solid #E1E4ED;;
+}
+
+
+
+/* The navigation links */
+
+.header-fixed .header-limiter a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.header-fixed .header-limiter nav {
+    line-height: 40px;
+    float: right;
+    font-size: 21px;
+    height: 40px;
+   
+}
+
+.header-fixed .header-limiter nav a {
+    display: inline-block;
+    margin-left: 50px;
+    text-decoration: none;
+    color: #ffffff;
+    opacity: 0.9;
+    transition-delay: 0.3s;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+
+
+
+
+/* Fixed version of the header */
+
+body.fixed .header-fixed {
+    padding: 10px 40px;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+body.fixed .header-fixed-placeholder {
+    display: block;
+}
+
+.h
+
+body.fixed .header-fixed .header-limiter h1 {
+
+    line-height: 30px;
+}
+
+body.fixed .header-fixed .header-limiter nav {
+    line-height: 28px;
+   
+}
+
+

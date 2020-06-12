@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel='stylesheet')
+        link(href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel='stylesheet')
+        link(href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" rel='stylesheet')
+        link(href="../css/style.min.css" rel='stylesheet')
+        title Document
+    body
+        video( poster='img/planet-bg.png' id='bgvid' playsinline autoplay muted loop)
+            source(src='../video/videoplayback_1.mp4' type='video/mp4')
+        include ../modules/responsiveHeader.pug
+        block content
+        
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+        script(src="../js/libs.min.js")
+        script(src="../js/main.js")

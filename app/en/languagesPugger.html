@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet"/>
+    <link href="../css/style.min.css" rel="stylesheet"/>
+    <title>Document</title>
+  </head>
+  <body>
+    <video poster="../img/planet-bg.png" id="bgvid" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="../video/videoplayback_1.mp4" type="video/mp4"/>
+    </video>
+    <main class="main-lang">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="content"><img class="content__img" src="../imgOpt/logo.svg" alt=""/>
+              <h1>Кастор</h1>
+              <h2 class="content__suptitle">о космосе и астрономии</h2>
+              <hr/>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="continue">
+              <p>Выберите язык, чтобы продолжить</p>
+              <button class="custom-btn btn-5" onclick="document.location='newMainPugger.html'"><span>Русский</button>
+              <button class="custom-btn btn-5" onclick="document.location='article.html'"><span>Английский</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../js/libs.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

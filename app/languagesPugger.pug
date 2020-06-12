@@ -1,0 +1,19 @@
+extends pug/layout/backVideoOnly
+
+
+block content
+    main.main-lang
+        .container
+            .row
+                .col-md-12
+                    .content
+                        img(src="../imgOpt/logo.svg", alt="" class="content__img")
+                        h1 Кастор
+                        h2.content__suptitle о космосе и астрономии
+                        hr
+            .row
+                .col-md-12
+                    .continue
+                        p для продолжения выберите язык
+                        button(onclick="document.location='newMainPugger.html'"  class="custom-btn btn-5") <span>Русский
+                        button(onclick="document.location='../en/newMainPugger.html'"  class="custom-btn btn-5") <span>Английский
